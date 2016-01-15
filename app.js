@@ -1,6 +1,10 @@
 var express = require('express');
 var app = express();
 
+// Middleware
+// Andrew to implement
+// Middleware
+
 app.set('view engine', 'ejs');
 
 app.render('index');
