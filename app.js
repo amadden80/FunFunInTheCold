@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 
+var morgan = require('morgan');
+app.use(morgan('dev'));
+
 // Middleware
 app.use(express.static('./public'));
 // Middleware
