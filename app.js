@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 // Middleware
-// Andrew to implement
+app.use(express.static('./public'));
 // Middleware
 
 app.set('view engine', 'ejs');
