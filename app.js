@@ -7,7 +7,10 @@ app.use(express.static('./public'));
 
 app.set('view engine', 'ejs');
 
-app.render('index');
+app.get('/', function(req, res){
+  res.render('index');
+});
+
 
 var port = 8080;
 app.listen(port, function(){
